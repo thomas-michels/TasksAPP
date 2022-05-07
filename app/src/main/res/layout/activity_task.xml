@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".view.TaskActivity">
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:hint="@string/descricao"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/ViewDivisor"/>
+
+    <TextView
+        android:text="@string/prioridade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spinner_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        style="@style/ViewDivisor"/>
+
+    <CheckBox
+        android:id="@+id/check_complete"
+        android:text="@string/completa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        style="@style/ViewDivisor"/>
+
+    <Button
+        android:id="@+id/button_date"
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/clique_para_selecionar_a_data"
+        android:textColor="@color/colorDescriptionTask"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"/>
+
+    <View
+        style="@style/ViewDivisor"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:text="@string/adicionar_tarefa"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
